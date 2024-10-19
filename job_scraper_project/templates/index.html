@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Listings</title>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Recruiter Email</th>
+        </tr>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job.title }}</td>
+            <td>{{ job.company }}</td>
+            <td>{{ job.recruiter_email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
