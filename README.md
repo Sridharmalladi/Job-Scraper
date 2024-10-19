@@ -16,13 +16,23 @@ Project Structure
 graphql
 Copy code
 /job_scraper_project/
+
 ├── app.py                 # Flask application to display job listings
+
 ├── scraper.py             # Web scraper to collect job data
+
 ├── models.py              # Database setup with SQLAlchemy
+
 ├── job_urls.txt           # File containing URLs of job boards to scrape
+
 ├── jobs.db                # SQLite database where scraped data is stored (auto-generated)
+
 ├── requirements.txt       # List of required Python packages
+
 Requirements
+
 Python 3.x
+
 SQLite (automatically installed with Python)
+
 Python packages: Requests, BeautifulSoup4, SQLAlchemy, Flask
